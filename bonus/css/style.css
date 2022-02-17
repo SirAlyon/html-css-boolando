@@ -1,0 +1,157 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+:root{
+    --eco: rgba(0, 135, 90, 1);
+    --discount: rgba(235, 0, 55, 1);
+    --price: rgba(255, 21, 41, 1);
+    --logo: rgba(240, 98, 46, 1);
+    --header: rgba(239, 239, 239, 1);
+}
+
+body{
+    background-color: white;
+
+}
+
+#site_main{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+
+}
+
+/* Utility classes */
+
+/* Header */
+
+header{
+    background-color: var(--header);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.logo{
+    padding: 0px 50px;
+    
+}
+
+#logoimg{
+    width: 100px;
+    vertical-align: middle;
+    
+      
+}
+
+.logotext{
+    font-size: 3rem;
+    color: var(--logo);
+    vertical-align: middle;
+}
+
+
+
+/* Main */
+
+.products{
+    margin: 10px 4px 0px 15px;   
+    width: 320px;
+    display: inline-block;
+
+}
+
+.product{
+    display: inline-block;
+    position: relative;
+    width: 320px;
+}
+
+.hidden-img{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.badges-bottom{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+
+.discount{
+  background-color: var(--discount);
+  color: white;
+  padding: 3px;
+
+}
+
+.eco{
+   background-color: var(--eco);
+   color: white;
+   padding: 3px;
+}
+
+
+.heart{
+    background-color: white;
+    padding: 5px 10px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-size: 1.5rem;
+}
+
+.shop{
+    display: none;
+    font-size: 2rem;
+    color: var(--logo);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.clothes-name{
+    font-style: italic;
+}
+
+.clothes-des{
+    font-weight: bold;
+}
+
+.final-price{
+    color: var(--price);
+}
+
+.original-price{
+    text-decoration: line-through;
+}
+
+.product:hover .hidden-img{
+    display: inherit;
+}
+
+.product:hover .heart{
+    color: var(--logo);
+    font-size: 2rem;
+}
+
+.product:hover .shop{
+    display: inherit;
+}
+
+/* Footer */
+
+footer{
+    background-color: white;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+footer span{
+    font-weight: bold;
+}
