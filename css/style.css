@@ -8,8 +8,17 @@
 }
 
 body{
-    background-color: lightgray;
-    
+    background-color: white;
+
+}
+
+#site_main{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
 }
 
 /* Utility classes */
@@ -17,26 +26,34 @@ body{
 /* Main */
 
 .products{
-    margin: 10px 4px 0px 15px;
+    margin: 10px 4px 0px 15px;   
+    width: 320px;
+    display: inline-block;
+
 }
 
 .product{
+    display: inline-block;
     position: relative;
+    width: 320px;
 }
 
 .hidden-img{
-    visibility: hidden;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-img{
-    max-width: 320px;
-    max-height: 460px;
+.badges-bottom{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
 }
 
 .discount{
   background-color: var(--discount);
   color: white;
-  margin-left: 5px;
   padding: 3px;
 
 }
@@ -47,10 +64,44 @@ img{
    padding: 3px;
 }
 
-.badges{
+
+.heart{
+    background-color: white;
+    padding: 5px 10px;
     position: absolute;
-    left: 0;
-    bottom: 20px;
+    top: 20px;
+    right: 0;
+    font-size: 1.5rem;
+}
 
+.clothes-name{
+    font-style: italic;
+}
 
+.clothes-des{
+    font-weight: bold;
+}
+
+.final-price{
+    color: var(--price);
+}
+
+.original-price{
+    text-decoration: line-through;
+}
+
+.product:hover .hidden-img{
+    display: inherit;
+}
+
+/* Footer */
+
+footer{
+    background-color: white;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+footer span{
+    font-weight: bold;
 }
