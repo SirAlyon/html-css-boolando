@@ -1,0 +1,12 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+:root{
+    --eco: rgba(0, 135, 90, 1);
+    --discount: rgba(235, 0, 55, 1);
+    --eco: rgba(255, 21, 41, 1);
+}
+
+body{
+    background-color: lightgray;
+}
