@@ -4,9 +4,53 @@
 :root{
     --eco: rgba(0, 135, 90, 1);
     --discount: rgba(235, 0, 55, 1);
-    --eco: rgba(255, 21, 41, 1);
+    --price: rgba(255, 21, 41, 1);
 }
 
 body{
     background-color: lightgray;
+    
+}
+
+/* Utility classes */
+
+/* Main */
+
+.products{
+    margin: 10px 4px 0px 15px;
+}
+
+.product{
+    position: relative;
+}
+
+.hidden-img{
+    visibility: hidden;
+}
+
+img{
+    max-width: 320px;
+    max-height: 460px;
+}
+
+.discount{
+  background-color: var(--discount);
+  color: white;
+  margin-left: 5px;
+  padding: 3px;
+
+}
+
+.eco{
+   background-color: var(--eco);
+   color: white;
+   padding: 3px;
+}
+
+.badges{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+
+
 }
