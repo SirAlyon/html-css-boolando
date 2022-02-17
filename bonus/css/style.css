@@ -37,19 +37,19 @@ header{
 }
 
 .logo{
-    padding: 0px 50px;
+    padding: 0px 20px;
     
 }
 
 #logoimg{
-    width: 100px;
+    width: 80px;
     vertical-align: middle;
     
       
 }
 
 .logotext{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--logo);
     vertical-align: middle;
 }
@@ -114,6 +114,20 @@ header{
     position: absolute;
     top: 30px;
     left: 30px;
+    z-index: 1000;
+}
+
+.shopbg{
+    background-color: white;
+    display: inline-block;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    top: -3px;
+    left: -30px;
+
 }
 .clothes-name{
     font-style: italic;
